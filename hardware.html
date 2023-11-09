@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    th:first-child, td:first-child {
+        border-right: 3px double;
+        font-weight: bold;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><style>
+      video.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      image.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  </style>
+  <title>BaRiFlex: A Robotic Gripper with Versatility and Collision Robustness for Robot Learning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/robin_logo_vert3.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="static/js/isInViewport.min.js"></script>
+  <script src="static/js/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_js_bootstrap.bundle.min.js"></script>
+  <script defer="" src="static/js/fontawesome.all.min.js"></script>
+  
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1135.0" data-gr-ext-installed="">
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>Manufacturing Instruction for BaRiFlex</bold>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Electronic Instruction</h3>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
+        <div class="columns is-centered">
+          <div class="column is-8">
+           <h5 class="title is-5">Text Instruction</h5>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                1) Use the soldering iron and wire cutter, connect the GL60 encoder pins to the small cables for the ODrive motor driver as shown in Encoder wiring diagram. 
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                2) Connect the 24 power supply and A,B,C phase motor cables to the ODrive motor driver as illustrated in Power Cable Diagram.
+              </div>
+            </div>
+
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                3) Connect the ODrive to the Host PC using USB-C cable.
+              </div>
+            </div>
+            
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                4) Follow the Cabliration Instruction video and finish the motor configuration.
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                5) Set the below motor properties<br>
+                <br>
+                In "Power Source" page: <br>
+                DC bus overvoltage: 26 <br>
+                DC bus undervoltage: 26 <br>
+                DC max positive current: 5 <br>
+                DC max nagative current: -5 <br>
+                <br>
+                In "Motor" Setup page: <br>
+                Type: Gimbal <br>
+                Phase resistance : 1.2 <br>
+                Pole pairs: 14 <br>
+                KV: 55 <br>
+                Current limit: 3.1 <br>
+                Motor calib. current: 3.1 <br>
+                Motor calib. voltage: 24 <br>
+                Lock-in spin current: 0.1 <br>
+                <br>
+                In "Encoder Paramater" page: <br>
+                Type: SPI(AMS protocol) <br>
+                nCS pin: GPIO17 <br>
+                <br>
+                In "Control mode" page<br>
+                Control mode: Filtered Position Control <br>
+                Position Setpoint: USB/UART/CAN <br>
+                Bandwidth: 15 <br>
+                Soft velocity limit: 10 <br>
+                Hard velocity limit: 10 <br>
+                Torque limit: 0.6 <br>
+              </div>
+            </div>
+            
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                6) Go to the "Apply & Calibrate" page <br>
+                6-1) Click "Erase & Reboot" button in Erease old configuration step<br>
+                6-2) Click "Apply new configuration" button in Apply new configuration step<br>
+                6-3) Click "Save & Reboot" button in Save to non-volatile memory step<br>
+                6-4) Click "Run Calibration Sequence" button in Calibrate step and wait until calibration is done<br>
+                6-5) Click "Save & Reboot" button in Save to non-volatile memory step<br>
+              </div>
+            </div>
+            
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                7) Go to the Dashboard on the top of the page.<br>
+                7-1) Change the Position Gain, velocity Gain and velocity Integrator Gain as below.<br>
+                (This is the empirical value. You can find the better tuning values by modifying those.) <br>
+                Position Gain: 20<br>
+                Velocity Gain: 0.3<br>
+                Velocity Integrator Gain: 0.333<br>
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                8) All electronic setup is completed. Go to the <a href="bariflex.html" style="font-weight:bold">"Code"</a> page and follow the instruction.
+              </div>
+            </div>
+          </div>
+          <div class="column is-7">
+           <h4 class="title is-5">Encoder Wiring Diagram</h4>
+            <img src="./static/images/GL60_wiring.jpg" alt="GL60_Wiring" width="100%">
+            <br><br>
+           <h4 class="title is-5">3-Phase Motor and Power Cable Wiring Diagram</h4>
+            <img src="./static/images/Motor_wiring.jpg" alt="Motor_Wiring" width="100%">
+            <br><br>
+           <h4 class="title is-5">Calibration Instruction Video</h4>
+            <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/gGHM64zFgYQ?si=6R65zrKDjacz-7rX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3" style="text-align: center;">Design Instruction</h3>
+        <h4 class="title is-5" style="text-align: center;"><bold>Assembly Time ~ 30-45 minutes</bold></h4>
+        <div class="row">
+          <div class="row">
+            <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/gGHM64zFgYQ?si=6R65zrKDjacz-7rX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3 class="title is-6" style="text-align: left;"> <bold>Before Assembly</bold> </h3>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                1) Motor calibration is required before assebmling the BaRiFlex. Follow the "Electornic Instruction" first. <br>
+                2) Prepare all components (3D printed parts, Required Components, Other Misc. Parts and Tools) described below.
+              </div>
+            </div>
+
+            <br>
+            <h3 class="title is-6" style="text-align: left;"> <bold>Main Assembly</bold> </h3>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                3) Insert the 5 6mm bearings into the bearing holes on the Top and Bottom Housing. <br>
+                4) Insert the 6 6mm hex nuts into the hex nut holes in the Top Housing. <br>
+                5) Insert the 2 6mm shafts (41mm length) into both the Left and Right Crank gear holes leaving equal protruding shaft from the top and bottom of the crank.<br>
+                6) On the Left Rocker’s top holes, attach the bottom two holes of the Coupler Link using 1 M4 x 35 screw and secure the other end using an 4mm hex nut. Do not overtighten. <br>
+                7) Insert 1 torsion spring into the inside of the Coupler Link near the top.<br>
+                8) Insert the other end of the torsion spring into the left Finger Tip torsion spring hole. <br>
+                9) Align the mounting holes from the Finger Tip with the upper holes in the Left Rocker and the Coupler Link.<br>
+                10) Insert an M4 x 35 screw into the aligned holes and secure the end with a 4mm nylon lock nut. Do not over tighten. <br>
+                11) Insert the TPU Tip and TPU Finger extrusions into their designated holes on the Finger Tip.<br>
+                12) Apply grip tape along the face of the of the TPU Tip and TPU Finger<br>
+                13) Repeat steps 4-10 for the Right Crank. <br>
+                14) Insert 2 M6 x 40 screws into the bottom of the Bottom Housing and into the left and right lower rocker holes. <br>
+                15) Adjust the lower TPU Finger extrusions to overlap and sit between the two rocker screws. <br>
+                16) Over top the lower TPU Finger extrusions, and rocker screws, insert the Inner Link Stopper Spacer with the bare side facing up on the screws and facing the crank gears.
+              </div>
+            </div>
+            
+            <br>
+            <h3 class="title is-6" style="text-align: left;">
+              <bold>Actuator Drive Assembly</bold>
+            </h3>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                17) On the 6mm D-cut shaft (54mm length), in order, insert the Actuator Shaft Mounting Plate, 1 6mm flange (screwed into the plate), the pinion gear (geared side facing mounting plate) and 1 6mm flange (screwed into the pinion).<br>
+                18) All parts on the shaft should be up against each other but leave enough shaft protruding from both the top and bottom of the assembly to properly align the pinion gear with the crank gear. <br>
+                19) Screw the Actuator Shaft Mounting Plate to the actuator with 4 M3 x 8 screws. 
+              </div>
+            </div>
+            
+            <br>
+            <h3 class="title is-6" style="text-align: left;">
+              <bold>Main Assembly (Cont.)</bold>
+            </h3>
+            <div class="card w-25">
+              <div class="card-body" style="text-align: left;">
+                20) Insert the actuator drive assembly into the largest hole on the top housing.<br>
+                21) Making sure all shafts, bearings and screws align properly, and press the top and bottom housings together. <br>
+                22) Tighten the two rocker screws from the bottom of the bottom housing (Do not overtighten) and bring all the parts together making sure all shafts press into the bearings. <br>
+                23) Place the Motor Mount Case atop the actuator and align the 4 actuator holes with the holes on the case. <br>
+                24) Screw 4 M3 x 6mm into the 4 holes<br>
+                25) Align the extruding case holes with the extruding holes on the top housing and fasten them from the bottom using 2 M6 x 16 screws.<br>
+                26) Lastly, place the Flange Adapter between the top and bottom housings near the rear and run 2 M6 x 45 screws through from the bottom of the bottom housing and tighten until the screw reaches the case’s hex nut.   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">
+            <bold>Required Components</bold>
+          </h3>
+          <br>      
+              <div class="row">
+                <br><table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th data-width="200">Item</th>
+                      <th data-width="200">Name</th>
+                      <th data-width="100">Quantity</th>
+                      <th data-width="400">Cost (ea.)</th>
+                      <th data-width="100">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/GL60.JPG"></td>
+                      <td> <a href="https://store.tmotor.com/goods-1126-GL60.html" style="font-weight:bold">T-MOTOR GL60</a> <br> <br>
+                      </td>
+                      <td>1</td>
+                      <td>$108.99</td>
+                      <td>$108.99</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/ODrive.JPG"></td>
+                      <td><a href="https://odriverobotics.com/shop/odrive-pro" style="font-weight:bold">ODRIVE PRO</a>
+                      </td>
+                      <td>1</td>
+                      <td>$229.00</td>
+                      <td>$229.00</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/ODrive_Connector.JPG"></td>
+                      <td><a href="https://odriverobotics.com/shop/connector-pack-for-odrive-pro" style="font-weight:bold"> CONNECTOR PACK FOR ODRIVE PRO</a></td>
+                      <td>1</td>
+                      <td>$14.00</td>
+                      <td>$14.00</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/6mm_bearing.JPG"></td>
+                      <td><a href="https://www.amazon.com/uxcell-606-2RS-Groove-Bearing-Bearings/dp/B07FF6FSK7/ref=sr_1_1_sspa?crid=16OCWBAUNBWOR&keywords=6mm%2Binner%2Bdiameter%2Bbearing&qid=1698725711&sprefix=6mm%2Binner%2Bdiameter%2Bbearin%2Caps%2C85&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" style="font-weight:bold"> 606-2RS DEEP GROOVE BALL BEARING</a></td>
+                      <td>5</td>
+                      <td>$7.99 (10pcs) </td>
+                      <td>$7.99</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/6mm_rod.JPG"></td>
+                      <td><a href="https://www.amazon.com/6mmX100mm-Linear-Motion-Shaft-Diameter/dp/B08HYG8H5W/ref=sr_1_2_sspa?crid=3FG2CW3802WFN&keywords=6mm%2Bshaft&qid=1698726035&sprefix=6mm%2Bshaf%2Caps%2C119&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" style="font-weight:bold"> 6mm LINEAR MOTION ROD SHAFT (200mm)</a></td>
+                      <td>1</td>
+                      <td>$7.99 </td>
+                      <td>$7.99</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/6mm_flange.JPG"></td>
+                      <td><a href="https://www.amazon.com/Coupling-Connector-Coupler-Accessory-Fittings/dp/B08334N261/ref=pd_bxgy_img_sccl_2/135-1937668-6417309?pd_rd_w=zRtnT&content-id=amzn1.sym.43d28dfc-aa4f-4ef6-b591-5ab7095e137f&pf_rd_p=43d28dfc-aa4f-4ef6-b591-5ab7095e137f&pf_rd_r=Q8G7Q9DK5S8QP0V4BBVD&pd_rd_wg=vENww&pd_rd_r=f5f4b138-c33a-4644-a4df-28d1792380be&pd_rd_i=B08334N261&th=1" style="font-weight:bold"> 6mm FLANGE COUPLING CONNECTOR</a></td>
+                      <td>2</td>
+                      <td>$8.99 (4pcs) </td>
+                      <td>$8.99</td>
+                    </tr>
+                    <tr>
+                      <td><img style="width:300px;" class="img-fluid" src="./static/manufacturing/parts/Torsion_spring.JPG"></td>
+                      <td><a href="https://us.misumi-ec.com/vona2/detail/221000572234/?CategorySpec=00000030046%3a%3ac%0900000030052%3a%3ag%09unitType%3a%3a1%0900000030053%3a%3amig00000001436743&list=PageCategory&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000572234%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000030049%22%3a%22mig00000001436576%22%2c%2200000030046%22%3a%22c%22%2c%2200000030052%22%3a%22f%22%2c%2200000030053%22%3a%22mig00000001436743%22%2c%22fixedInfo%22%3a%22innerCode%3aMDM00005804703%7c9%22%7d&Tab=codeList" style="font-weight:bold"> 7mm I.D. TORSION SPRING</a>
+                      </br> Right Winding 180° coils</td>
+                      <td>2</td>
+                      <td>$6.29 </td>
+                      <td>$12.58</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+          
+          <h5 class="title is-4" style="text-align: center; padding-bottom: 10px;">Other Misc. Parts</h5>
+          
+            
+              <div class="row">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th data-width="200">Name</th>
+                      <th data-width="100">Quantity</th>
+                      <th data-width="400">Cost (ea.)</th>
+                      <th data-width="100">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://www.amazon.com/Uxcell-a16011300ux0870-M3x6mm-Carbon-Countersunk/dp/B01E5EOIWW/ref=sr_1_28?crid=7TAVE0IF6BTN&keywords=M3+6mm&qid=1698798294&s=industrial&sprefix=m3+6mm%2Cindustrial%2C111&sr=1-28" style="font-weight:bold">M6 6mm Screws</a></td>
+                      <td>8</td>
+                      <td>$6.49 (50 pcs)</td>
+                      <td>$6.49 </td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.amazon.com/Socket-Screws-Metric-Machine-Threaded/dp/B0969Q797Y/ref=sr_1_4?crid=2GQ43F5XHKIGF&keywords=M4%2Bx%2B35mm&qid=1698799299&s=industrial&sprefix=m4%2Bx%2B35mm%2Cindustrial%2C105&sr=1-4&th=1" style="font-weight:bold">M4 35mm Screws</a></td>
+                      <td>4</td>
+                      <td>$9.29 (25 pcs)</td>
+                      <td>$9.29 </td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.amazon.com/M6-1-0x10mm-Available-Stainless-Machine-Fastener/dp/B081K1TDV5/ref=sr_1_3?crid=2TNOGZKDYM4DG&keywords=M6%2B10mm&qid=1698799928&s=industrial&sprefix=m6%2B10mm%2Cindustrial%2C85&sr=1-3&th=1" style="font-weight:bold">M6 10mm Screws</a></td>
+                      <td>4</td>
+                      <td>$7.99 (50 pcs)</td>
+                      <td>$7.99</td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.amazon.com/Uxcell-a15092400ux0159-Socket-Button-Screws/dp/B017NC1RCC/ref=sr_1_3?crid=1WQQIZLLRFHWA&keywords=M6+35mm&qid=1698799780&s=industrial&sprefix=m6+35mm+,industrial,98&sr=1-3" style="font-weight:bold">M6 35mm Screws</a></td>
+                      <td>2</td>
+                      <td>$8.49 (20 pcs)</td>
+                      <td>$8.49</td>
+                  </tr>
+                    <tr>
+                      <td><a href="https://www.amazon.com/binifiMux-30Pcs-M6-Inserted-Clinching/dp/B07BD1G7KK/ref=sr_1_6?crid=3221ISMHAC2ZP&keywords=M6+nut&qid=1698799867&s=industrial&sprefix=m6+nut,industrial,89&sr=1-6" style="font-weight:bold">M6 Nuts</a></td>
+                      <td>4</td>
+                      <td>$5.99 (30 pcs)</td>
+                      <td>$5.99</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/HATCHBOX-Printer-Filament-Dimensional-Accuracy/dp/B09G7BXN2J/ref=sr_1_1_sspa?crid=ANUFM75DH6EZ&keywords=hatchbox%2Bpla&qid=1698800485&s=industrial&sprefix=hatchbox%2Bpla%2Cindustrial%2C112&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" style="font-weight:bold">HATCHBOX PLA</a></td>
+                    <td>1</td>
+                    <td>$25.99</td>
+                    <td>$25.99</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/Overture-Filament-Flexible-Consumables-Dimensional/dp/B07VGVW546/ref=sr_1_3?crid=RLTWRVVIQ3A4&keywords=overture%2Btpu&qid=1698800604&s=industrial&sprefix=overture%2Btpu%2Cindustrial%2C83&sr=1-3&th=1" style="font-weight:bold">OVERTURE TPU Filament</a><br> (95A hardness)</td>
+                    <td>1</td>
+                    <td>$27.99</td>
+                    <td>$27.99</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/MEAN-WELL-NDR-120-24-Single-Industrial/dp/B00R5CI1W0/ref=sr_1_10?crid=PTE5CCIMCFZC&keywords=24V+power+supply&qid=1698800861&sprefix=24v+power+supply%2Caps%2C98&sr=8-10" style="font-weight:bold">Power Supply (24V 5A)</a></td>
+                    <td>1</td>
+                    <td>$32.75</td>
+                    <td>$32.75</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/dp/B0BZCN6K9V/ref=sspa_dk_detail_4?pd_rd_i=B0BZCN6K9V&pd_rd_w=Tlj2D&content-id=amzn1.sym.0d1092dc-81bb-493f-8769-d5c802257e94&pf_rd_p=0d1092dc-81bb-493f-8769-d5c802257e94&pf_rd_r=JG0BNYQCCE40HTQZPAJ8&pd_rd_wg=AuhK1&pd_rd_r=9b9a062f-0304-44d2-971a-2eb0e9f9a319&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&th=1" style="font-weight:bold"> Power Cable</a></td>
+                    <td>1</td>
+                    <td>$9.99</td>
+                    <td>$9.99</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/dp/B088RDY284?ref_=cm_sw_r_cp_ud_dp_4ESS07CK5QSXK185XQEP&th=1" style="font-weight:bold">14 AWG Cable</a></td>
+                    <td>1</td>
+                    <td>$19.96</td>
+                    <td>$19.96</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.amazon.com/Gorilla-Roll-Tread-1-Pack-Black/dp/B08NTX9Y24/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=B79tD&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=7EBFVFAX50GWGHY3KYRE&pd_rd_wg=UfwVl&pd_rd_r=36cc6701-f764-424b-9b8b-3a7ff09535cc&pd_rd_i=B08NTX9Y24&th=1" style="font-weight:bold">Anti-Slip Grip Tape</a></td>
+                    <td>1</td>
+                    <td>$14.78</td>
+                    <td>$14.78</td>
+                  </tr>
+          </tbody>
+          </table>
+          <div class="row">
+            <div class="col-sm-6">
+             <div class="list-group">
+               <div class="list-group-item  flex-column align-items-start">
+                 <div class="d-flex w-100 justify-content-between">
+                   <h5 class="mb-1" style="font-weight:bold">Cost:</h5>
+                   <small class="text-muted">As of Oct 2023</small>
+                 </div>
+                   <p class="mb-1 fs-6">Main Parts: $389.54</p>
+                   <p class="mb-1 fs-6">Misc. Parts: $169.71</p>
+                   <p class="mb-1 fs-5">Total: $559.25</p>
+                 <small> <br></small>
+                </div>
+             </div>
+            </div>
+           </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>Tools Required</bold>
+          </h3>
+          <div class="row">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th data-width="200">Name</th>
+                  <th data-width="100">Quantity</th>
+                  <th data-width="400">Cost (ea.)</th>
+                  <th data-width="100">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://www.amazon.com/dp/B084V7KS25?ref_=cm_sw_r_cp_ud_dp_QNNY228B4WTC4WG9P5N7" style="font-weight:bold">M3, M4, M6 Hex Allen Wrenches</a> </td>
+                  <td>1</td>
+                  <td>$11.99</td>
+                  <td>$11.99</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.prusa3d.com/product/original-prusa-i3-mk3s-3d-printer-3/" style="font-weight:bold">Prusa MK3S+</a></td>
+                  <td>1</td>
+                  <td>$899</td>
+                  <td>$899</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.amazon.com/Soldering-Interchangeable-Adjustable-Temperature-Enthusiast/dp/B087767KNW/ref=sr_1_1_sspa?crid=3A90XBQVBQMJ5&keywords=soldering%2Biron&qid=1698802218&sprefix=soldering%2Biron%2Caps%2C100&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" style="font-weight:bold">Soldering Iron</a> <br>
+                  <td>1</td>
+                  <td>$11.99</td>
+                  <td>$11.99</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.amazon.com/VANQUISH-4851-Aluminum-Frame-Mini/dp/B01LZ1FDXH/ref=sr_1_5?crid=PHO6SZVFZTHA&keywords=hand%2Bsaw%2Bfor%2Baluminum&qid=1698937354&sprefix=hand%2Bsaw%2Bfor%2Baluminum%2Caps%2C94&sr=8-5&th=1" style="font-weight:bold">Aluminum Frame Hack Saw</a> <br>
+                  <td>1</td>
+                  <td>$6.99</td>
+                  <td>$6.99</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.amazon.com/WGGE-Professional-crimping-Multi-Tool-Multi-Function/dp/B073YG65N2/ref=sr_1_2_sspa?crid=VTTOIEDHM3OI&keywords=Wire%2BStripper&qid=1698937510&sprefix=wire%2Bstripper%2Caps%2C91&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" style="font-weight:bold">Wire Cutter</a> <br>
+                  <td>1</td>
+                  <td>$8.59</td>
+                  <td>$8.59</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>3D Printed Parts</bold>
+          </h3> <!--Todo Add pan around gif of each object-->
+          <div class="row">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <!-- <th data-width="100">Item</th> -->
+                  <th class="col-1">Item</th>
+                  <th class="col-1">Download</th>
+                  <th class="col-1">Quantity</th>
+                </tr>
+              </thead>
+                  <!-- <td><a href="./static/cad/stl/palm_lower.stl">Palm Right</a> <br><br> <a href="./static/cad/stl/palm_lower_left.stl">Palm Left</a></td> -->
+              <tbody>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Actuator_pulley.jpeg"></td>
+                  <td><a href="./static/CAD/Actuator_Pulley.stl" style="font-weight:bold">Actuator Pulley</a> </td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Coupler.jpeg"></td>
+                  <td><a href="./static/CAD/Coupler_Link.stl" style="font-weight:bold">Coupler Link</a> </td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Crank_left.jpeg"> <br> <img style="width:200px;" class="img-fluid" src="./static/images/Website/Crank_right.jpeg"></td>
+                  <td><a href="./static/CAD/Crank_Left.stl" style="font-weight:bold">Crank Left</a> <br> <a href="./static/CAD/Crank_Right.stl" style="font-weight:bold">Crank Right</a></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Flange_adapter.jpeg"></td>
+                  <td><a href="./static/CAD/Flange_adapter.stl" style="font-weight:bold">Flange Adapter</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Housing_bottom.jpeg"></td>
+                  <td><a href="./static/CAD/Housing_Bottom.stl" style="font-weight:bold">Housing Bottom</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Housing_top.jpeg"></td>
+                  <td><a href="./static/CAD/Housing_Top.stl" style="font-weight:bold">Housing Top</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Inner_link_stopper_spacer.jpeg"></td>
+                  <td><a href="./static/CAD/Inner_Link_Stopper_Spacer.stl" style="font-weight:bold">Inner Link Stopper Spacer</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Motor_mount_case.jpeg"></td>
+                  <td><a href="./static/CAD/MotorMountCase.stl" style="font-weight:bold">Motor Mount Case</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Pinion_gear.jpeg"></td>
+                  <td><a href="./static/CAD/Pinion_Gear_1M_24T_20PA_10FW.stl" style="font-weight:bold">Pinion Gear</a> </td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Rocker_left.jpeg"> <br> <img style="width:200px;" class="img-fluid" src="./static/images/Website/Rocker_right.jpeg"></td>
+                  <td><a href="./static/CAD/Rocker_Left.stl" style="font-weight:bold">Rocker Left</a> <br> <a href="./static/CAD/Rocker_Right.stl" style="font-weight:bold">Rocker Right</a></td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Soft_gripper_finger_left.jpeg"> <br> <img style="width:200px;" class="img-fluid" src="./static/images/Website/Soft_gripper_finger_right.jpeg"></td>
+                  <td><a href="./static/CAD/soft_gripper_finger_left.stl" style="font-weight:bold">Soft gripper finger Left</a> <br> <a href="./static/CAD/soft_gripper_finger_right.stl" style="font-weight:bold">Soft gripper finger Right</a></td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Finger_tip_left.jpeg"> <br> <img style="width:200px;" class="img-fluid" src="./static/images/Website/Finger_tip_right.jpeg"></td>
+                  <td><a href="./static/CAD/FingerTip_left.stl" style="font-weight:bold">Finger tip Left</a> <br> <a href="./static/CAD/FingerTip_right.stl" style="font-weight:bold">Finger tip Right</a></td>
+                  </td><td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:200px;" class="img-fluid" src="./static/images/Website/Tip_TPU.jpeg"></td>
+                  <td><a href="./static/CAD/Tip_tpu.stl" style="font-weight:bold">Tip TPU</a> </td>
+                  </td><td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div class="row">
+            <div class="card w-25">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold">Printer:</h5>
+                <p class="card-text">We use Prusa MK3S+. But any FDM 3D printer will work.</p>
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold">Software:</h5>
+                <p class="card-text">I recommend <a href="https://www.prusa3d.com/page/prusaslicer_424/">Prusa Slicer</a>, choose the correct software based on your printer.</p>
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold">Settings (PLA):</h5>
+                <li class="list-group-item">30% Infill, supports, 0.15mm Quality, Filament Type: HATCHBOX PLA.</li>
+                <li class="list-group-item">210C Nozzle and 60C Bed</li>
+              </div>
+            </div>
+            <br>
+            <div class="card w-25">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold">Settings (TPU):</h5>
+                <li class="list-group-item">20% Infill, supports, 0.20mm Speed, Filament Type: Sainsmart TPU. </li>
+                <li class="list-group-item">230C Nozzle and 50C Bed </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <!-- <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+        <br>
+        <p>Contact us at goochul@utexas.edu if you have any questions.</p>
+      </div>
+    </div>
+  </footer>
+
+
+<!--
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>Electronic Instruction</bold>
+          </h3>
+            <div class="col">
+              <h5 class="is-4">
+                <bold>Text Instructions:</bold>
+              </h5>
+              <ul class="list-group">
+                <li class="list-group-item">1) Attach larger S101 bracket using 4 short 4mm tap black screws screwed into the MCP side motor.</li>
+                <li class="list-group-item">2) Attach PIP motor to S101 bracket using 4 of the long M2 8mm tap screws.</li>
+                <li class="list-group-item">3) Align H101 Horn, DIP Spacer and larger S101 bracket, and put 4 M2 10mm screws through them followed by nuts inside S101.</li>
+                <li class="list-group-item">4) Attach DIP assembly to PIP motor using 4 black M2 4mm tap screws and idler.</li>
+                <li class="list-group-item">5) Attach DIP Motor to open S101 bracket using 4 of the long M2 8mm tap screws.</li>
+                <li class="list-group-item">6) Attach Fingertip to H101 Horn using 6 M2 4mm screws into 3D brass inserts.  Attach Horn to open DIP motor using idler and 4 short 4mm tap black screws.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="is-4">
+                <bold>3D Model Preview:</bold>
+              </h5>
+              <div class="sketchfab-embed-wrapper"> <iframe title="PIP/DIP LEAP Assembly" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" width="526" height="300" src="https://sketchfab.com/models/e33db4a8c3f8492ead0b2e0a9e8c0a65/embed?autospin=0&amp;camera=0"> </iframe> </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
