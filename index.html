@@ -27,35 +27,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-      .rotate-90 {
-          transform: rotate(90deg);
-      }
-  </style>
   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4qU8LZ/dreQq1hQa9u5sFrK6k18FbR7" crossorigin="anonymous">
+
+  <!-- Bootstrap JS and Popper.js (for dropdowns, modals, etc.) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-YZbTQ6jZtBAqEGyN8K61Ay3G99ZXyOrlrYVA6iMPaXHNSZEXiXyEZB2a1oM42qJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4qU8LZ/dreQq1hQa9u5sFrK6k18FbR7" crossorigin="anonymous"></script>
+
   <style>
+    .rotate-90 {
+      transform: rotate(90deg);
+    }
+
     table {
-        width: 100%;
-        border-collapse: collapse;
-        font-family: 'Times New Roman', Times, serif;
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Times New Roman', Times, serif;
     }
 
     th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
-        vertical-align: middle;
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+      vertical-align: middle;
     }
+
     th:first-child, td:first-child {
-        border-right: 3px double;
-        font-weight: bold;
+      border-right: 3px double;
+      font-weight: bold;
     }
+
     th {
-        background-color: #f2f2f2;
+      background-color: #f2f2f2;
+    }
+
+    .nav {
+      border: 1px solid #ccc;
+      border-width: 1px 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* The magic. */
+      background-color: #f8f9fa; /* Light gray background color */
+    }
+    
+    .nav li {
+      display: inline; /* More magic. */
+    }
+    
+    .nav a {
+      display: inline-block; /* Last bit of magic. */
+      padding: 15px;
+      font-size: 25px; /* Font size set to 30px */
+
     }
   </style>
+  
+  
   <title>BaRiFlex: A Robotic Gripper with Versatility and Collision Robustness for Robot Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/robin_logo_vert3.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -75,13 +110,23 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  
 <!-- Testing -->
   
-
-
-  
 </head>
-<body>
+
+
+
+
+
+<body data-gr-ext-installed>
+
+  <ul class="nav">
+    <li><a href="index.html" class="w3-bar-item w3-button">Main Paper</a></li>
+    <li><a href="hardware.html" class="w3-bar-item w3-button">Hardware Tutorial</a></li>
+    <li><a href="purchase_list.html" class="w3-bar-item w3-button">Purchase List</a></li>
+    <li><a href="https://github.com/UT-Austin-RobIn/bariflex_code" class="w3-bar-item w3-button">Code</a></li>
+  </ul>
 
 
   <section class="hero">
